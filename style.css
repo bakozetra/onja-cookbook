@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+}
+
+.container h1 {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.container-list {
+    grid-column: 2;
+    display: grid;
+    padding-left: 6rem;
+    padding-right: 3rem;
+    background-color: lightcoral;
+    border-radius: 1rem;
+}
+
+.order-list {
+    grid-column: 2;
+    display: grid;
+    margin-bottom: 1.5rem;
+}
+
+.container .submit-button {
+    grid-column: 2;
+}
+
+input {
+    padding: 8px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+select {
+    padding: 8px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    display: inline;
+    transition: all 0.2s;
+}
+
+.submit-button {
+    width: 100px;
+    background-color: blue;
+    color: white;
+}
+
+#ingredient {
+    margin-bottom: 1.5rem;
+}
+
+#step {
+    margin-bottom: 1.5rem;
+}
