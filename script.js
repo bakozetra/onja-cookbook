@@ -1,15 +1,26 @@
 // Grab the selector
-const ingredientParagraph = document.querySelector('.ingredient-description');
+const typeIngredient = document.querySelector('.ingredients');
 const ingredientBtn = document.querySelector('.ingredient-button');
 const ingredient = document.querySelector('#ingredient');
-// create function of the ingredient 
+const steps = document.querySelector('.steps');
+const stepBtn = document.querySelector('.step-button');
+const step = document.querySelector('#step');
+// create function for ingredient 
 const myIngredient = () => {
-    const myHtml = `
+    const myHtmlIngredient = `
      <input type="text" name="ingredient" id="ingredient" required>
      `
-    ingredientParagraph.insertAdjacentHTML('beforeend', myHtml);
-}
+    typeIngredient.insertAdjacentHTML('beforeend', myHtmlIngredient);
+};
 
 
-// add event listener on the ingredient button
+// function for step
+const myStep = () => {
+    const myHtml = `
+    <input type="text" name="step" id="step" required>
+    `
+    steps.insertAdjacentHTML('beforeend', myHtml);
+};
+// add event listener
 ingredientBtn.addEventListener('click', myIngredient);
+stepBtn.addEventListener('click', myStep);
