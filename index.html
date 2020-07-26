@@ -12,45 +12,48 @@
     <div class="container">
         <h1>Onja cookBook</h1>
         <div class="container-list">
-            <div class="order-list">
-                <p>The recipe name</p>
-                <input type="text" name="name" id="name" required>
-                <p>A photo for the recipe (url)</p>
-                <input type="text" name="url" id="url" required>
-                <p>The cook's name</p>
-                <input type="text" name="cook" id="cook" required>
-                <p>A difficulty level
-                </p>
-                <select name="level" id="level" required>
-                <option value="easy">Easy</option>
-                <option value="meduim">Medium</option>
-                <option value="hard">Hard</option>
-                </select>
-                <p>
-                    The timing
-                </p>
-                <select name="time" id="time" required>
-                <option value="15min">15min</option>
-                <option value="30min">30min</option>
-                <option value="45min">45min</option>
-                <option value="60min">60min</option>
-                <option value="1h">1h</option>
-                </select>
-                <div class="ingredients">
-                    <p class="ingredient-description">The ingredient-description</p>
-                    <input type="text" name="ingredient" id="ingredient" required/>
+            <form>
+                <div class="order-list">
+                    <p>The recipe name</p>
+                    <input type="text" name="name" value="" id="recepi-name" required>
+                    <p>A photo for the recipe (url)</p>
+                    <input type="text" name="url" id="url" required>
+                    <p>The cook's name</p>
+                    <input type="text" name="name" id="cook" required>
+                    <p>A difficulty level
+                    </p>
+                    <select name="name" value: "" data-level="easy" id="level" required>
+                        <option value="easy">Easy</option>
+                        <option value="meduim">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <p>
+                        The timing
+                    </p>
+                    <select name="name" data-time="15" id="time" required>
+                        <option value="15min">15min</option>
+                        <option value="30min">30min</option>
+                        <option value="45min">45min</option>
+                        <option value="60min">60min</option>
+                        <option value="1h">1h</option>
+                    </select>
+                    <div class="ingredients">
+                        <p class="ingredient-description">The ingredient-description</p>
+                        <input type="text" name="name" id="ingredient" required/>
+                    </div>
+                    <button class="ingredient-button">add a new ingredient to the list</button>
+                    <div class="steps">
+                        <p class="step-description">The step</p>
+                        <input type="text" name="name" id="step" required />
+                    </div>
+                    <button class="step-button">Add a new step to the list</button>
                 </div>
-
-                <button class="ingredient-button">add a new ingredient to the list</button>
-                <div class="steps">
-                    <p class="step-description">The step</p>
-                    <input type="text" name="step" id="step" required />
-                </div>
-                <button class="step-button">Add a new step to the list</button>
-            </div>
-            <button class="submit-button">Submit</button>
+                <button class="submit-button" id="sub">Submit</button>
+            </form>
+            <p id="demo"></p>
         </div>
     </div>
+
     <script src="./script.js"></script>
 </body>
 

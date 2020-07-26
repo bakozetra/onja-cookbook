@@ -13,7 +13,7 @@
     display: grid;
     padding-left: 6rem;
     padding-right: 3rem;
-    background-color: lightcoral;
+    background-color: lavender;
     border-radius: 1rem;
 }
 
@@ -21,6 +21,8 @@
     grid-column: 2;
     display: grid;
     margin-bottom: 1.5rem;
+    color: black;
+    font-size: 25px;
 }
 
 .container .submit-button {
@@ -49,7 +51,6 @@ button {
     border-radius: 5px;
     border: 1px solid lightgray;
     cursor: pointer;
-    display: inline;
     transition: all 0.2s;
 }
 
